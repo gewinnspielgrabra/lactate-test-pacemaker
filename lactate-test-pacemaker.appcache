@@ -1,11 +1,13 @@
 CACHE MANIFEST
 # v1
-index.html
-index.css
-beep.ogg
 beep.m4a
+beep.ogg
+index.css
+index.html
+index.js
 node_modules/jquery/dist/jquery.min.js
 node_modules/jquery/dist/jquery.min.js
+node_modules/bootstrap/dist/js/bootstrap.min.js
 node_modules/node-buzz/buzz.js
 node_modules/bootstrap/dist/css/bootstrap.min.css
 node_modules/bootstrap/dist/css/bootstrap-theme.min.css
