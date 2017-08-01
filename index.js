@@ -1,5 +1,5 @@
 (function() {
-  var stageOptions = [[8, 9, 10, 11, 12], [8, 9.5, 11, 12.5, 14]];
+  var stageOptions = [[6, 7, 8, 9, 10, 11, 12], [6.5, 8, 9.5, 11, 12.5, 14]];
   var dist = 1200;
   var i = -1;
 
