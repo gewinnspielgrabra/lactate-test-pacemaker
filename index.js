@@ -1,5 +1,6 @@
 (function() {
   var stageOptions = [[6, 7, 8, 9, 10, 11, 12], [6.5, 8, 9.5, 11, 12.5, 14]];
+  var minTimeOptions = [4, 5, 6];
   var dist = 1200;
   var i = -1;
 
@@ -27,7 +28,8 @@
       $('#start').addClass('btn-success').removeClass('btn-danger').removeClass('btn-success');
       $('#start').html('<span class="glyphicon glyphicon-refresh"></span> Reload');
     } else {
-      distRemaining = dist;
+      var minPerKm = 60 / stages[i];
+      distRemaining = Math.ceil(4 / (minPerKm * 0.4)) * 400;
       $('#start').addClass('btn-success').removeClass('btn-danger').removeClass('btn-default');
       $('#start').html('<span class="glyphicon glyphicon-play"></span> Start');
       $('#stage').html('Stage ' + (i + 1) + ' &mdash; ' + stages[i] + ' km/h');
